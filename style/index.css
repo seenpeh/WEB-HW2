@@ -1,0 +1,40 @@
+@font-face {
+    font-family: IranYekan;
+    src: url(../fonts/IRANYekanBold.ttf);
+}
+
+@font-face {
+    font-family: IranYekanBlack;
+    src: url(../fonts/IRANYekanBlack.ttf);
+}
+
+@font-face {
+    font-family: IranYekanLight;
+    src: url(../fonts/IRANYekanLight.ttf);
+}
+
+body {
+    font-family: IranYekan;
+    color: #362E2C;
+    background-color: #EFEADE;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-right: 20px; /* Adjust the padding to create space for the icon */
+}
+li::before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    color: #000000; /* Adjust the color if needed */
+    font-size: 20px; /* Adjust the font size if needed */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
