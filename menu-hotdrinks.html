@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/index.css">
+    <style>
+        h2 {
+            color:#3E5B53
+        }
+        p {
+            color: #3E5B53;
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 8px;
+            margin-right: 32px;
+        }
+        .items {
+            font-size: 24px;
+        }
+        .tab-color {
+            color: #362E2C;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3E5B53;">
+        <a class="navbar-brand" href="index.html" style="color: azure;">کافه سیپ</a>
+        <div class="navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" style="color: azure" href="reserve.html">رزرو میز</a>
+                <a class="nav-item nav-link" style="color: azure" href="gallery.html">گالری عکس</a>
+                <a class="nav-item nav-link active" style="color: azure" href="menu-hotdrinks.html">منوی کافه</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <ul class="nav nav-tabs justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link tab-color" data-toggle="tab" href="menu-pizza.html">پیتزا</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tab-color" data-toggle="tab" href="menu-sandwiches.html">ساندویج</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tab-color" data-toggle="tab" href="menu-colddrinks.html">نوشیدنی سرد</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tab-color active" data-toggle="tab" href="menu-hotdrinks.html">نوشیدنی گرم</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade" id="pizza">
+                <h2>پیتزا</h2> <br>
+                <ul class="items">
+                    <li>پیتزا مارگاریتا - 400,000 تومان</li>
+                    <p>سس گوجه، پنیر موزارلا، ریحان تازه</p>
+                    <li>پیتزا پپرونی - 450,000 تومان</li>
+                    <p>پپرونی، پنیر موزارلا، ریحان تازه</p>
+                    <li>پیتزا سوپریم گیاهی - 425,000 تومان</li>
+                    <p>سس گوجه، پنیر موزارلا، ریحان تازه، قارچ</p>
+                    <li>پیتزا هاوایی - 475,000 تومان</li>
+                    <p>سس گوجه، پنیر موزارلا، ریحان تازه</p>
+                    <li>پیتزا سیر و استیک - 550,000 تومان</li>
+                    <p>سس سیر، پنیر موزارلا، ریحان تازه، استیک</p>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="sandwich">
+                <h2>ساندویج</h2> <br>
+                <ul class="items">
+                    <li>ساندویچ آلفردو - 400,000 تومان</li>
+                    <p>سس گوجه، پنیر، مرغ، ریحان تازه</p>
+                    <li>ساندویچ گوشت و پنیر - 450,000 تومان</li>
+                    <p>گوشت چرخ کرده گوسفندی، پنیر موزارلا</p>
+                    <li>ساندویچ سبزیجات - 425,000 تومان</li>
+                    <p>سس گوجه، پنیر موزارلا، ریحان تازه، قارچ</p>
+                    <li>ساندویچ بوقلمون - 475,000 تومان</li>
+                    <p>کالباس ۹۰ درصد بوقلمون، پنیر موزارلا، ریحان تازه، قارچ</p>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="cold">
+                <h2>نوشیدنی سرد</h2> <br>
+                <ul>
+                    <li>آیس‌لاته - 150,000 تومان</li>
+                    <li>فراپه - 200,000 تومان</li>
+                    <li>آیس‌تی - 125,000 تومان</li>
+                    <li>اسموتی - 225,000 تومان</li>
+                    <li>موهیتو - 80,000 تومان</li>
+                    <li>رد موهیتو - 190,000 تومان</li>
+                    <li>کوکتل میوه فصل - 210,000 تومان</li>
+                    <li>آب پرتقال - 150,000 تومان</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade show active" id="hot">
+                <h2>نوشیدنی گرم</h2> <br>
+                <ul class="items">
+                    <li>آمریکانو - 125,000 تومان</li>
+                    <li>لاته - 150,000 تومان</li>
+                    <li>کاپوچینو - 175,000 تومان</li>
+                    <li>اسپرسو - 100,000 تومان</li>
+                    <li>دابل اسپرسو -  150,000 تومان</li>
+                    <li>موکا - 100,000 تومان</li>
+                    <li>کارامل ماکیاتو - 100,000 تومان</li>
+                    <li>فراپاچینو - 100,000 تومان</li>
+                    <li>آفوگاتو - 100,000 تومان</li>
+                    <li>چای لاهیجان - 120,000 تومان</li>
+                    <li>راف - 160,000 تومان</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    
+    
+    
+
+</body>
+</html>
